@@ -2,7 +2,7 @@ import { FiFilter } from 'react-icons/fi';
 import { categories } from '../../utils/data';
 
 export default function CategoryFilter({ selectedCategory }) {
-  // Fonction pour modifier l'URL et recharger la page
+  // Function to update URL and reload page
   function updateCategory(catId) {
     const search = new URLSearchParams(window.location.search);
     if (catId === 'all') {

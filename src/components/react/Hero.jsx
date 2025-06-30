@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image } from 'astro:assets';
-import hero from '../react/hero.jpg'; // Adjust the path as necessary
+import hero from '../react/hero.jpg'; 
 
 const Hero = () => {
   return (

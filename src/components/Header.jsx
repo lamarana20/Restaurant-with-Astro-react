@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
     setCurrentPath(window.location.pathname);
   }, []);
-
+//isActive function to set the active class based on the current path
   const isActive = (path) => path === currentPath ? 'text-amber-600 font-bold' : 'text-gray-700';
 
   return (
@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="/" className="flex items-center gap-2">
           <img src={logo.src} alt="Logo" className="w-6 h-auto" />
-          <span className="text-xl font-bold">Restaurant Astro</span>
+          <span className="text-xl font-bold">Restaurant MLD</span>
         </a>
 
         <nav className="hidden md:flex gap-6">

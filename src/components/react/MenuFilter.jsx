@@ -1,4 +1,4 @@
-// src/components/react/MenuFilter.jsx
+
 import { useState } from "react";
 import MenuItem from "./MenuItem";
 import { categories, menuItems } from "../../utils/data";
