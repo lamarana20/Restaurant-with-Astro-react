@@ -1,11 +1,26 @@
 ---
 import Welcome from '../components/Welcome.astro';
+import Hero from '../components/react/Hero';
 import Layout from '../layouts/Layout.astro';
+import '../layouts/global.css';
+import PopularItem from '../components/react/PopularItem';
+import Cart from '../components/Cart';
+import CartWrapper from '../components/react/CartWrapper';
+
+
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div class="ml-5 mr-5">
+	
+  <Hero client:load />
+  <PopularItem client:load />
+
+ 
+ </div>
+  
+
 </Layout>

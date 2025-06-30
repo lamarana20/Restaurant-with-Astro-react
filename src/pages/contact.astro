@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="w-full  ml-2 mr-2 md:w-1/2 sm:mx-auto px-4 py-12 my-9 border-amber-100 border-2 rounded-3xl bg-white shadow-lg">
+    <h1 class="text-3xl font-bold mb-6 text-center">Contactez-nous</h1>
+
+    <form class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input
+        type="text"
+        class="w-full border p-2 rounded-2xl"
+        placeholder="Votre nom"
+        required
+      />
+      <input
+        type="email"
+        class="w-full border p-2 rounded-2xl"
+        placeholder="Email"
+        required
+      />
+      </div>
+      <textarea
+        class="w-full border p-2 rounded-2xl"
+        rows="4"
+        placeholder="Votre message ici..."></textarea>
+      <button
+        type="submit"
+        class="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700"
+        >Envoyer</button
+      >
+    </form>
+  </div>
+</Layout>

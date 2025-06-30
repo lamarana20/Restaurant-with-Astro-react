@@ -1,0 +1,114 @@
+export const categories = [
+  { id: 'starters', name: 'Entrées', icon: '🥗' },
+  { id: 'mains', name: 'Plats', icon: '🍲' },
+  { id: 'desserts', name: 'Desserts', icon: '🍰' },
+  { id: 'drinks', name: 'Boissons', icon: '🍹' },
+
+];
+
+export const menuItems = [
+  {
+    id: 1,
+    name: 'Poulet rôti au thym',
+    description: 'Poulet fermier rôti avec légumes de saison et jus réduit',
+    price: 14.9,
+    category: 'drinks',
+    prepTime: 20,
+    isPopular: true,
+    isVegan: false,
+    isGlutenFree: true,
+    calories: 650,
+    image: '../image/burger.jpg'
+  },
+  {
+    id: 2,
+    name: 'Pizza Margherita',
+    description: 'Tomate San Marzano, mozzarella di bufala, basilic frais',
+    price: 11.5,
+    category: 'mains',
+    prepTime: 15,
+    isPopular: true,
+    isVegan: false,
+    isGlutenFree: false,
+    calories: 850,
+    image: '../image/burger.jpg'
+  },
+  {
+    id: 3,
+    name: 'Tiramisu Classique',
+    description: 'Crème mascarpone, café italien, biscuits Savoiardi, cacao',
+    price: 6.5,
+    category: 'desserts',
+    prepTime: 10,
+    isPopular: true,
+    isVegan: false,
+    isGlutenFree: false,
+    calories: 450,
+    image: '../image/burger.jpg'
+  },
+  {
+    id: 4,
+    name: 'Limonade Artisanale',
+    description: 'Citrons pressés, menthe fraîche, sirop de canne',
+    price: 3.0,
+    category: 'drinks',
+    prepTime: 5,
+    isPopular: false,
+    isVegan: true,
+    isGlutenFree: true,
+    calories: 120,
+    image: '../image/menu-burger.jpg'
+  },
+  {
+    id: 5,
+    name: 'Salade César Signature',
+    description: 'Poulet confit, lardons croustillants, parmesan 24 mois, œuf mollet',
+    price: 12.5,
+    category: 'mains',
+    prepTime: 15,
+    isPopular: true,
+    isVegan: false,
+    isGlutenFree: false,
+    calories: 550,
+    image: '../image/menu-burger.jpg'
+  },
+  {
+    id: 6,
+    name: 'Tarte aux Pommes Grand-Mère',
+    description: 'Pommes caramélisées, pâte brisée maison, crème vanille',
+    price: 5.0,
+    category: 'desserts',
+    prepTime: 12,
+    isPopular: false,
+    isVegan: false,
+    isGlutenFree: false,
+    calories: 380,
+    image: '../image/momo.jpg'
+  },
+  {
+    id: 7,
+    name: 'Thé Glacé Signature',
+    description: 'Thé noir Earl Grey, zeste d\'orange, feuilles de menthe',
+    price: 2.5,
+    category: 'drinks',
+    prepTime: 3,
+    isPopular: false,
+    isVegan: true,
+    isGlutenFree: true,
+    calories: 80,
+    image: '../image/menu-momo.jpg'
+  },
+  {
+    id: 8,
+    name: 'Carpaccio de Betterave',
+    description: 'Betterave jaune et rouge, fromage de chèvre, noix torréfiées',
+    price: 8.5,
+    category: 'drinks',
+    prepTime: 10,
+    isPopular: false,
+    isVegan: true,
+    isGlutenFree: true,
+    calories: 220,
+    image: '../image/momo.jpg'
+  }
+];
