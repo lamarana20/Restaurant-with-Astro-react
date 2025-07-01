@@ -6,9 +6,18 @@ const Header = () => {
   const [currentPath, setCurrentPath] = useState('/');
 
   useEffect(() => {
-    setCurrentPath(window.location.pathname);
+    const updatePath = () => setCurrentPath(window.location.pathname);
+    updatePath(); // initial load
+    window.addEventListener('popstate', updatePath);
+    window.addEventListener('pushState', updatePath);
+    window.addEventListener('replaceState', updatePath);
+    return () => {
+      window.removeEventListener('popstate', updatePath);
+      window.removeEventListener('pushState', updatePath);
+      window.removeEventListener('replaceState', updatePath);
+    };
   }, []);
-//isActive function to set the active class based on the current path
+
   const isActive = (path) => path === currentPath ? 'text-amber-600 font-bold' : 'text-gray-700';
 
   return (
