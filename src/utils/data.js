@@ -4,7 +4,6 @@ export const categories = [
   { id: 'desserts', name: 'Desserts', icon: '🍰' },
   { id: 'drinks', name: 'Boissons', icon: '🍹' },
   { id: 'vegan', name: 'Vegan', icon: '🌱' },
-
 ];
 
 export const menuItems = [
@@ -13,26 +12,26 @@ export const menuItems = [
     name: 'Poulet rôti au thym',
     description: 'Poulet fermier rôti avec légumes de saison et jus réduit',
     price: 14.9,
-    category: 'drinks',
+    category: 'mains',
     prepTime: 20,
     isPopular: true,
     isVegan: false,
     isGlutenFree: true,
     calories: 650,
-    image: '../image/menu-burger.jpg'
+    image: '/images/menu-burger.jpg',
   },
   {
     id: 2,
     name: 'Pizza Margherita',
     description: 'Tomate San Marzano, mozzarella di bufala, basilic frais',
     price: 11.5,
-    category: 'vegan',
+    category: 'mains',
     prepTime: 15,
     isPopular: true,
     isVegan: false,
     isGlutenFree: false,
     calories: 850,
-    image: '../image/burger.jpg'
+    image: '/images/burger.jpg',
   },
   {
     id: 3,
@@ -45,7 +44,7 @@ export const menuItems = [
     isVegan: false,
     isGlutenFree: false,
     calories: 450,
-    image: '../image/burger.jpg'
+    image: '/images/burger.jpg',
   },
   {
     id: 4,
@@ -58,20 +57,20 @@ export const menuItems = [
     isVegan: true,
     isGlutenFree: true,
     calories: 120,
-    image: '../image/menu-burger.jpg'
+    image: '/images/menu-burger.jpg',
   },
   {
     id: 5,
     name: 'Salade César Signature',
     description: 'Poulet confit, lardons croustillants, parmesan 24 mois, œuf mollet',
     price: 12.5,
-    category: 'mains',
+    category: 'starters',
     prepTime: 15,
     isPopular: true,
     isVegan: false,
     isGlutenFree: false,
     calories: 550,
-    image: '../image/menu-burger.jpg'
+    image: '/images/menu-burger.jpg',
   },
   {
     id: 6,
@@ -84,7 +83,7 @@ export const menuItems = [
     isVegan: false,
     isGlutenFree: false,
     calories: 380,
-    image: '../image/momo.jpg'
+    image: '/images/momo.jpg',
   },
   {
     id: 7,
@@ -97,19 +96,19 @@ export const menuItems = [
     isVegan: true,
     isGlutenFree: true,
     calories: 80,
-    image: '../image/menu-momo.jpg'
+    image: '/images/menu-momo.jpg',
   },
   {
     id: 8,
     name: 'Carpaccio de Betterave',
     description: 'Betterave jaune et rouge, fromage de chèvre, noix torréfiées',
     price: 8.5,
-    category: 'drinks',
+    category: 'vegan',
     prepTime: 10,
     isPopular: false,
     isVegan: true,
     isGlutenFree: true,
     calories: 220,
-    image: '../image/momo.jpg'
-  }
+    image: '/images/momo.jpg',
+  },
 ];
