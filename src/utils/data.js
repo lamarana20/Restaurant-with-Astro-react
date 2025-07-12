@@ -3,6 +3,7 @@ export const categories = [
   { id: 'mains', name: 'Plats', icon: '🍲' },
   { id: 'desserts', name: 'Desserts', icon: '🍰' },
   { id: 'drinks', name: 'Boissons', icon: '🍹' },
+  { id: 'vegan', name: 'Vegan', icon: '🌱' },
 
 ];
 
@@ -18,14 +19,14 @@ export const menuItems = [
     isVegan: false,
     isGlutenFree: true,
     calories: 650,
-    image: '../image/burger.jpg'
+    image: '../image/menu-burger.jpg'
   },
   {
     id: 2,
     name: 'Pizza Margherita',
     description: 'Tomate San Marzano, mozzarella di bufala, basilic frais',
     price: 11.5,
-    category: 'mains',
+    category: 'vegan',
     prepTime: 15,
     isPopular: true,
     isVegan: false,

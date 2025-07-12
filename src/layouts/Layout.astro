@@ -1,8 +1,8 @@
 ---
-import Footer from "../components/Footer.astro";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../layouts/global.css";
-
+import { CartProvider } from "../components/react/CartContext";
 ---
 
 <!doctype html>
@@ -14,20 +14,13 @@ import "../layouts/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Restaurant</title>
   </head>
-  <body class="bg-white text-gray-900 font-sans">
-   
+  <body class="bg-white text-gray-900 font-sans ">
+    <CartProvider client:load>
       <Header client:load />
       <slot />
-      <Footer />
-   
+      <Footer client:load />
+    </CartProvider>
   </body>
 </html>
 
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
+

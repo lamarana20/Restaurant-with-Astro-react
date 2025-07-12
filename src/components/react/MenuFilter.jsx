@@ -1,10 +1,9 @@
-
 import { useState } from "react";
 import MenuItem from "./MenuItem";
 import { categories, menuItems } from "../../utils/data";
 import { FiFilter } from "react-icons/fi";
 
-export default function MenuFilter() {
+const MenuFilter = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const filteredItems =
@@ -20,7 +19,7 @@ export default function MenuFilter() {
   return (
     <div>
       {/* Filtres */}
-      <div className=" flex flex-wrap gap-2 justify-center ">
+      <div className="flex flex-wrap gap-2 justify-center">
         <button
           onClick={() => setSelectedCategory("all")}
           className={`px-4 py-2 rounded-full flex items-center gap-1 border transition ${
@@ -32,6 +31,7 @@ export default function MenuFilter() {
           <FiFilter className="text-sm" />
           <span>Tous</span>
         </button>
+
         {categories.map((cat) => (
           <button
             key={cat.id}
@@ -51,6 +51,7 @@ export default function MenuFilter() {
       {/* Section plats */}
       <section className="flex flex-col gap-4 my-3 mx-auto w-full md:w-2/3">
         <h2 className="text-2xl font-bold mb-4 text-center">{categoryName}</h2>
+
         {filteredItems.length === 0 ? (
           <div className="text-center py-12 text-gray-500">
             Aucun plat ne correspond à cette catégorie.!
@@ -65,4 +66,6 @@ export default function MenuFilter() {
       </section>
     </div>
   );
-}
+};
+
+export default MenuFilter;

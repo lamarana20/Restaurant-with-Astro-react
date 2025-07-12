@@ -29,10 +29,11 @@ const Header = () => {
         </a>
 
         <nav className="hidden md:flex gap-6">
-          <a href="/" className={`text-lg hover:text-amber-600 ${isActive('/')}`}>Accueil</a>
+          <a href="/" className={`text-lg hover:text-amber-600 ${isActive('/')}`}>Home</a>
           <a href="/menu" className={`text-lg hover:text-amber-600 ${isActive('/menu')}`}>Menu</a>
-          <a href="/order" className={`text-lg hover:text-amber-600 ${isActive('/order')}`}>Commander</a>
+          <a href="/order" className={`text-lg hover:text-amber-600 ${isActive('/order')}`}>Order</a>
           <a href="/contact" className={`text-lg hover:text-amber-600 ${isActive('/contact')}`}>Contact</a>
+          <a href="/cart" className={`text-lg hover:text-amber-600 ${isActive('/cart')}`}>Cart</a>
         </nav>
 
         <button
@@ -46,10 +47,11 @@ const Header = () => {
 
       {isOpen && (
         <nav className="md:hidden px-4 pb-4 flex flex-col gap-2 bg-white">
-          <a href="/" className={`text-lg hover:text-amber-600 ${isActive('/')}`}>Accueil</a>
+          <a href="/" className={`text-lg hover:text-amber-600 ${isActive('/')}`}>Home</a>
           <a href="/menu" className={`text-lg hover:text-amber-600 ${isActive('/menu')}`}>Menu</a>
-          <a href="/order" className={`text-lg hover:text-amber-600 ${isActive('/order')}`}>Commander</a>
+          <a href="/order" className={`text-lg hover:text-amber-600 ${isActive('/order')}`}>Order</a>
           <a href="/contact" className={`text-lg hover:text-amber-600 ${isActive('/contact')}`}>Contact</a>
+          <a href="/cart" className={`text-lg hover:text-amber-600 ${isActive('/cart')}`}>Cart</a>
         </nav>
       )}
     </header>

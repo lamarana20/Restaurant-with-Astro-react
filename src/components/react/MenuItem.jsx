@@ -1,17 +1,10 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import { FiHeart, FiClock, FiStar, FiPlus } from 'react-icons/fi';
 import { motion } from 'framer-motion';
-import { CartContext } from './CartContext';
-
-
 
 const MenuItem = ({ item }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [quantity, setQuantity] = useState(1);
-
-
-
-
 
   return (
     <motion.div 
@@ -22,7 +15,7 @@ const MenuItem = ({ item }) => {
     >
       <div className="relative">
         <img 
-          src={item.image ||  '/placeholder-food.jpg'} 
+          src={item.image || '/placeholder-food.jpg'} 
           alt={item.name} 
           className="w-full h-48 object-cover"
           loading="lazy"
@@ -88,7 +81,7 @@ const MenuItem = ({ item }) => {
             </button>
             <span className="px-3">{quantity}</span>
             <button 
-          onClick={() => setQuantity(quantity + 1)}
+              onClick={() => setQuantity(quantity + 1)}
               className="px-3 py-1 text-gray-600 hover:bg-gray-100 rounded-r-full"
             >
               +
@@ -98,7 +91,7 @@ const MenuItem = ({ item }) => {
           <motion.button 
             className="flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
             whileTap={{ scale: 0.95 }}
-   onClick={() => addToCart({ ...item, qty: quantity })}
+            onClick={() => addToCart({ ...item, qty: quantity })}
           >
             <FiPlus />
             <span>Ajouter</span>
